@@ -1,0 +1,31 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #eee; //#424242;
+@bgColorBody: #fff;
+@colorBody: #111; //#333;
+@accentFarg: #000080;
+//@fontFamilyBody: serif;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    //font: 100.01%/1 @fontFamilyBody;
+    // Activate the grid base font
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+h1,
+h4 {
+    color: @accentFarg ;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
